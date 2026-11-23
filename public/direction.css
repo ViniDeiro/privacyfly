@@ -1,0 +1,40 @@
+/* Privacy Fly — visual identity, editorial and contemporary. */
+:root { --bg:#f7f7f8; --card:#fff; --ink:#201e29; --muted:#706c7a; --line:#e9e6ec; --accent:#7652a9; --dark:#262131; --radius:16px; }
+.wrap { max-width:1420px; }
+.nav { height:84px; border-bottom:0; }
+.brand { font-family:'DM Sans',Arial,sans-serif; font-weight:700; letter-spacing:-1.5px; font-size:29px; text-transform:none; }
+.brand small { letter-spacing:1.1px; font-size:8px; text-transform:uppercase; }
+.navlinks a { padding:10px 0; }
+.navlinks a:hover { color:var(--accent); }
+.btn { border-radius:10px; }
+.hero { padding:30px 36px; border-radius:24px; position:relative; overflow:hidden; background:#211d2c; color:#fff; grid-template-columns:1fr 1fr; min-height:390px; margin:12px 0 24px; gap:35px; }
+.hero h1 { font-size:clamp(42px,4.5vw,70px); letter-spacing:-2.3px; line-height:1.04; }
+.hero h1 i { color:#d0b3ed; }
+.hero .eyebrow { color:#c6abdf; }
+.hero p { color:#d1cbd8; margin:18px 0 24px; }
+.hero .btn { background:#e4d4fa; color:#30223d; display:inline-block; }
+.hero-stat { color:#d1cbd8; margin-top:27px; }
+.hero-stat b { color:white; }
+.hero-art { grid-template-columns:1fr .76fr; min-height:320px; gap:12px; }
+.hero-art .portrait:first-child { height:330px; border-radius:17px; }
+.hero-art .portrait:last-child { height:285px; border-radius:17px; transform:translateY(12px); }
+.hero-art .portrait img { object-position:center 32%; }
+.filterbar { border-radius:14px; box-shadow:0 5px 28px #211d2c08; }
+.section { padding:32px 0 44px; }
+.section-heading h2 { font-family:'DM Sans',Arial,sans-serif; font-weight:600; font-size:30px; letter-spacing:-1px; }
+.grid { gap:18px; }
+.card { border-color:transparent; box-shadow:0 4px 18px #211d2c09; transition:transform .18s,box-shadow .18s; }
+.card:hover { transform:translateY(-4px); box-shadow:0 10px 25px #211d2c15; }
+.card .portrait { height:295px; border-radius:12px; margin:8px 8px 0; }
+.card .portrait img { object-position:center 30%; }
+.card .name a { letter-spacing:-.4px; }
+.heart { width:38px; height:38px; top:10px; right:10px; }
+.cardbody { padding:16px; }
+.badge { background:#eae2f5; color:#63438d; }
+.badge.pending { background:#fff0d9; color:#896115; }
+.badge.blocked { background:#f7e4e4; color:#a24747; }
+.side a.active,.side a:hover { background:#eee7f6; color:#684892; }
+.barset i { background:#8769b8; } .barset i+i { background:#d8c7e9; }
+:root[data-theme="dark"] { --bg:#181620; --card:#24212c; --ink:#f1edf8; --muted:#b7afc3; --line:#3b3545; --accent:#cbb1ef; --dark:#8d6ab9; }
+[data-theme="dark"] .side a.active,[data-theme="dark"] .side a:hover { background:#392d4c;color:#e4d4fa; }
+@media(max-width:680px){.hero{padding:24px 20px;grid-template-columns:1fr;gap:12px;}.hero h1{font-size:42px}.hero-art{min-height:210px}.hero-art .portrait:first-child{height:225px}.hero-art .portrait:last-child{height:190px}.card .portrait{height:195px}.grid{gap:10px}.brand{font-size:21px}.brand small{font-size:7px}.nav{height:72px}.cardbody{padding:12px}.section-heading h2{font-size:24px}}
